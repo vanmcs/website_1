@@ -2,6 +2,7 @@
       
       <ul>
         <li class="active"><a href="{{ url('/') }}">Home</a></li>
+        <li class="active"><a href="{{ route('admin.category.index') }}">Categories</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>

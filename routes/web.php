@@ -15,9 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/portfolio', 'HomeController@portfolio')->name('portfolio');
+Route::get('admins.portfolio', 'HomeController@portfolio')->name('portfolio');
 
+Route::get('admins.categories', 'CategoryController@index')->name('admin.category.index');
+Route::get('admins.categories.create', 'CategoryController@create')->name('admin.category.create');
+Route::post('admins.categories', 'CategoryController@store')->name('admin.category.store');
+Route::get('admins.categories.{id}.edit', 'CategoryController@edit')->name('admin.category.edit');
+Route::put('admins.categories.{id}.update', 'CategoryController@update')->name('admin.category.update');
+Route::delete('admins.categories.{id}.delete', 'CategoryController@delete')->name('admin.category.delete');
 
-Auth::routes();
+Auth::routes(); 
 
 Route::get('/home', 'HomeController@index')->name('home');

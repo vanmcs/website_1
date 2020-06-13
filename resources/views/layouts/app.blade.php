@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Arsha Bootstrap Template - Index</title>
+  <title>Week 10 Assignment</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
